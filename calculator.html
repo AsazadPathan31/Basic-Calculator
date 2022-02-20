@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/indexstyle.css" rel="stylesheet">
+<link href="css/studentstyle.css" rel="stylesheet">
+<script
+       src="https://code.jquery.com/jquery-3.6.0.min.js"
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+       	
+       </script>
+
+      <script src="calc.js" onclick="insert(4)"></script>
+	<title>Calculator</title>
+
+	<style>
+		
+		td:hover{
+
+			cursor:pointer;
+			background-color:black;
+			color:white;
+
+		}
+		#mc{
+			background-color:#1b63c2;
+			color:white;
+		}
+		#mc:hover{
+
+			background-color:#1d2f52;
+			color:white;
+
+		}
+
+		#eql{
+			padding-top:35px;
+			font-size:30px;
+			color:white;
+			background-color: #0bd480;
+		}
+
+
+	</style>
+</head>
+<body>
+<br><br><br>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-2">
+
+
+			</div>
+			
+			<div class="col-md-8">
+
+					<h1 class="text-mutted" style="text-align:center; font-family:Courier New;font-size:45px;margin-left:100px;"> Calculator </h1>
+<br><br>
+				<form>
+					
+						<input type="text" id="box" class="form-control text-dark bg-mutted" style="padding:30px; font-family:cursive;text-align:right;font-size:30px;">
+
+				</form>
+				<table class="table table-bordered text-dark bg-light" style="text-align:center;font-size: 25px;">
+
+					<tr>
+
+						<td onclick="cl()" id="mc">MC</td>
+						<td onclick="sigdel()">Del</td>
+						<td onclick="insert('/')">/</td>
+						<td onclick="insert('*')">X</td>
+
+					</tr>
+
+					<tr>
+
+						<td onclick="insert(7)">7</td>
+						<td onclick="insert(8)">8</td>
+						<td onclick="insert(9)">9</td>
+						<td onclick="insert('-')">-</td>
+
+					</tr>
+
+
+					<tr>
+
+						<td onclick="insert(4)">4</td>
+						<td onclick="insert(5)">5</td>
+						<td onclick="insert(6)">6</td>
+						<td onclick="insert('+')">+</td>
+
+					</tr>
+
+
+					<tr>
+
+						<td onclick="insert(1)">1</td>
+						<td onclick="insert(2)">2</td>
+						<td onclick="insert(3)">3</td>
+						<td onclick="operation()" rowspan="2" id="eql">=</td>
+
+					</tr>
+
+
+					<tr>
+		
+						<td onclick="insert(0)" colspan="2">0</td>
+						<td onclick="insert('.')">.</td>
+
+					</tr>
+
+
+				</table>
+
+			</div>
+			
+			<div class="col-md-2">
+
+
+			</div>
+				
+		</div>
+
+	</div>
+<br><br><br><br><br>
+</body>
+
+</html>
